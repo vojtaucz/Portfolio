@@ -187,6 +187,18 @@ h3 {
     border-radius: 30px;
     z-index: 100;
 }
+.java {
+    top: 0;
+    position: relative;
+    transition: 0.2s;
+    width: 100px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.java:hover {
+    top: -20px;
+    transition: 0.3s;
+}
 .portfolio {
     scroll-margin-top: 100px;
     background-color: #F2545B;
@@ -216,8 +228,12 @@ h3 {
     align-items: center;
 }
 .konicky > img {
-    width: 50px;
+    width: 150px;
     align-items: center;
+}
+.boombox {
+    transform: translateY(-15px) rotateZ(15deg);
+    
 }
 .kontakt {
     scroll-margin-top: 100px;
@@ -271,6 +287,24 @@ input:hover {
 }
 .end {
     text-align: center;
+}
+.topp {
+    background-color: #F2545B;
+    scroll-margin-top: 100px;
+    margin-top: 150px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.topp > img {
+    width: 300px;
+    align-items: center;
+}
+.topp > a > button {
+    border-radius: 60px;
+    border-color: #ffffff00;
+    width: 125px;
+    border-radius: 15px;
+    overflow: visible;
 }
 @media only screen and (min-width: 1200px) {
     .kdojsem > img {
