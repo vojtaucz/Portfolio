@@ -91,7 +91,12 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-.kdojsem > img {
+.kdojseminside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kdojsem > .kdojseminside >img {
     width: 300px;
     border-radius: 15px; margin-bottom: 15px;
     z-index: 15px;
@@ -208,7 +213,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-.portfolio > img {
+.portfolio > .portfolio-container > .portfoliotab > img {
     width: 300px;
     align-items: center;
 }
@@ -306,11 +311,27 @@ input:hover {
     border-radius: 15px;
     overflow: visible;
 }
-@media only screen and (min-width: 1200px) {
-    .kdojsem > img {
-        align-self: end;
-    }
-    .kdojsem > h2,p {
+@media only screen and (min-width: 750px) {
+    .kdojsem > h2 {
+        position: relative;
         align-self: start;
+        right: -50px;
+    }
+    .kdojsem > .kdojseminside > img {
+        align-self: end;
+        position: relative;
+        left: -80px;
+    }
+    .kdojsem > .kdojseminside {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .kdojsem > .kdojseminside > p {
+        padding-left: 40px;
+        padding-right: 100px;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
     }
 }
