@@ -119,6 +119,16 @@ h3 {
     position: relative;
     top: 5px;
 }
+.skillholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-skillholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .css {
     width: 100px;
     position: relative;
@@ -321,6 +331,7 @@ input:hover {
         align-self: end;
         position: relative;
         left: -80px;
+        top: -55px;
     }
     .kdojsem > .kdojseminside {
         display: flex;
@@ -329,6 +340,38 @@ input:hover {
     .kdojsem > .kdojseminside > p {
         padding-left: 40px;
         padding-right: 100px;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .kdojsem > h2 {
+        position: relative;
+        align-self: start;
+        right: -50px;
+    }
+    .kdojsem > .kdojseminside > img {
+        align-self: end;
+        position: relative;
+        left: -80px;
+        width: 500px;
+        top: -55px;
+    }
+    .kdojsem > .kdojseminside {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .kdojsem > .kdojseminside > p {
+        padding-left: 40px;
+        padding-right: 220px;
+    }
+    .container-skillholder {
+        flex-direction: row;
+    }
+    .skillholder {
+        flex-direction: column-reverse;
     }
     .portfolio-container {
         display: flex;
