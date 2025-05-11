@@ -76,6 +76,16 @@ h3 {
     font-family: "Josefin";
     font-size: 35px;
     height: 600px;
+    overflow: hidden;
+}
+.hero-holder {
+    display: flex;
+    flex-direction: row;
+}
+.vojta {
+    position:  relative;
+    width: 400px;
+    top: 150px;
 }
 .site > * {
     padding-top: 36px;
@@ -96,10 +106,18 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-.kdojsem > .kdojseminside >img {
+.kdojsem > .kdojseminside > .imgs > img {
     width: 300px;
     border-radius: 15px; margin-bottom: 15px;
     z-index: 15px;
+}
+.imgs {
+    display: flex;
+    flex-direction: row;
+}
+.vojta-sit {
+    position: relative;
+    right: -70px;
 }
 .dovednosti {
     scroll-margin-top: 100px;
@@ -266,7 +284,7 @@ h3 {
     overflow: visible;
 }   
 .jmeno {
-    width: 100px;
+    width: 200px;
     border-radius: 15px;
 }
 .email {
@@ -366,6 +384,46 @@ input:hover {
     .kdojsem > .kdojseminside > p {
         padding-left: 40px;
         padding-right: 220px;
+    }
+    .container-skillholder {
+        flex-direction: row;
+    }
+    .skillholder {
+        flex-direction: column-reverse;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    h2 {
+        font-size: 34px;
+    }
+    p {
+        font-size: 24px;
+        text-align: left;
+    }
+    .kdojsem > h2 {
+        position: relative;
+        align-self: start;
+        right: -50px;
+        font-size: 34px;
+    }
+    .kdojsem > .kdojseminside > img {
+        align-self: end;
+        position: relative;
+        left: -80px;
+        width: 500px;
+        top: -55px;
+    }
+    .kdojsem > .kdojseminside {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .kdojsem > .kdojseminside > p {
+        padding-left: 40px;
+        padding-right: calc(640px + 2vw);
     }
     .container-skillholder {
         flex-direction: row;
