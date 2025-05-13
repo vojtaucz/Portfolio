@@ -44,7 +44,7 @@ h3 {
     position: fixed;
     transition: 0.2s;
     width: 250px;
-    height: 400px;
+    height: 500px;
     background-color: #F2545B;
     left: -250px;
     top: 100px;
@@ -55,6 +55,22 @@ h3 {
     align-items: center;
     gap: 60px;
     z-index: 255;
+}
+.navvojta {
+    width: 100px;
+    background-color: #c53d44;
+    border-radius: 100%; 
+    position: relative;
+    right: 15px;
+}
+.socpic-container {
+    display: flex;
+    flex-direction: row;
+}
+.socpic {
+    position: relative;
+    top: -20px;
+    width: 75px;
 }
 .header {
     height: 100px;
@@ -406,7 +422,7 @@ input:hover {
         width: 350px;
     }
     .vojta-sit{
-        right: -62px;
+        right: -92px;
     }
     .kdojsem > .kdojseminside {
         display: flex;
