@@ -1,3 +1,26 @@
+window.addEventListener('load', function () {
+  var vojta = document.getElementsByClassName('vojta');
+  new SimpleParallax(vojta, {
+    scale: 1.5,
+    delay: 1,
+    orientation: 'left down',
+    overflow: true
+  });
+  var langarmy = document.getElementsByClassName('langarmy');
+  new SimpleParallax(langarmy, {
+    scale: 1.1,
+    delay: 1,
+    orientation: 'left down',
+    overflow: true
+  });
+  var herotext = document.getElementsByClassName('herotext');
+  new SimpleParallax(herotext, {
+    scale: 2,
+    delay: 1,
+    orientation: 'up',
+    overflow: true
+  });
+});
 var zapnuty = false;
 function menu() {
     var menubutton = document.getElementById("menubutton");

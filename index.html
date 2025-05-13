@@ -22,9 +22,14 @@
         </div>
         <div class="site">
             <div class="top" id="top">
-                <h1>Vojtěch Úšela</h1>
+                <h1 class="herotext">Vojtěch Úšela</h1>
                 <div class="hero-holder">
-                    <img class="vojta" src="temp/vojta11.png">
+                    <div>
+                        <img class="vojta" src="temp/vojta11.png">
+                    </div>
+                    <div class="langarmy">
+                        <img src="photos/langarmy.png" class="langarmy">
+                    </div>
                 </div>
             </div>
             <div class="kdojsem" id="kdojsem">
@@ -120,7 +125,6 @@
             </div>
         </div>
     </body>
-    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init()
@@ -136,11 +140,7 @@
         })();
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    <script>
-    createDraggable('jmeno', {
-        container: [0, 0, 0, 0],
-        releaseEase: createSpring({ stiffness: 200 })
-        }); 
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@6.1.1/dist/vanilla/simpleParallaxVanilla.umd.min.js"></script>
+    <script src="script.js"></script>
+    
 </html>

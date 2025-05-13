@@ -78,14 +78,34 @@ h3 {
     height: 600px;
     overflow: hidden;
 }
+.top > h1 {
+    font-size: 125px;
+    position: relative;
+    top: 250px;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+}
 .hero-holder {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .vojta {
     position:  relative;
     width: 400px;
     top: 150px;
+    z-index: 25;
+}
+.langarmy {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.langarmy > img{
+    object-fit: contain ;
+    position: relative;
+    top: -25px
 }
 .site > * {
     padding-top: 36px;
@@ -106,8 +126,8 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-.kdojsem > .kdojseminside > .imgs > img {
-    width: 300px;
+.imgs > img {
+    width: 180px;
     border-radius: 15px; margin-bottom: 15px;
     z-index: 15px;
 }
@@ -117,7 +137,7 @@ h3 {
 }
 .vojta-sit {
     position: relative;
-    right: -70px;
+    right: -47px;
 }
 .dovednosti {
     scroll-margin-top: 100px;
@@ -345,11 +365,17 @@ input:hover {
         align-self: start;
         right: -50px;
     }
-    .kdojsem > .kdojseminside > img {
+    .kdojsem > .kdojseminside > .imgs {
         align-self: end;
         position: relative;
         left: -80px;
         top: -55px;
+    }
+    .imgs > img {
+        width: 240px;
+    }
+    .vojta-sit{
+        right: -62px;
     }
     .kdojsem > .kdojseminside {
         display: flex;
@@ -370,12 +396,17 @@ input:hover {
         align-self: start;
         right: -50px;
     }
-    .kdojsem > .kdojseminside > img {
+    .kdojsem > .kdojseminside > .imgs {
         align-self: end;
         position: relative;
         left: -80px;
-        width: 500px;
         top: -55px;
+    }
+    .imgs > img {
+        width: 350px;
+    }
+    .vojta-sit{
+        right: -92px;
     }
     .kdojsem > .kdojseminside {
         display: flex;
