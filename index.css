@@ -21,6 +21,13 @@ p {
     text-align: left;
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 1.4; 
+    max-width: 90%;   
+    word-wrap: break-word;
+    white-space: normal;  
+}
+.text-container {
+    width: 100%;
 }
 h2 {
     color: white;
@@ -93,7 +100,7 @@ h3 {
     color: white;
     font-family: "Josefin";
     font-size: 35px;
-    height: 600px;
+    height: 400px;
     overflow: hidden;
     overflow-wrap: break-word;
 }
@@ -115,9 +122,9 @@ h3 {
 }
 .vojta {
     position:  relative;
-    width: 250px;
+    width: 160px;
     z-index: 25;
-    top: 100px;
+    top: 120px;
     left: -20px;
 }
 .langarmy {
@@ -128,8 +135,9 @@ h3 {
 .langarmy > img{
     object-fit: contain ;
     position: relative;
-    width: 320px;
-    left: -180px;
+    width: 180px;
+    left: 0px; 
+    top: 120px;
 }
 .site > * {
     padding-top: 36px;
@@ -384,7 +392,33 @@ input:hover {
     border-radius: 15px;
     overflow: visible;
 }
+@media only screen and (min-width: 450px) {
+    .langarmy > img{
+        object-fit: contain ;
+        position: relative;
+        width: 320px;
+        left: 0px; 
+        top: 0px;
+    }
+
+    .vojta {
+        position:  relative;
+        width: 250px;
+        z-index: 25;
+        top: 100px;
+        left: -20px;
+    }
+    .top { 
+        height: 600px;
+    }
+}
 @media only screen and (min-width: 750px) {
+    p {
+        font-size: 1rem;
+    }
+    .text-container {
+        width: 255px;
+}
     .kdojsem > h2 {
         position: relative;
         align-self: start;
@@ -404,7 +438,9 @@ input:hover {
     }
     .kdojsem > .kdojseminside {
         display: flex;
+         width: 100%;
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
     .kdojsem > .kdojseminside > p {
         padding-left: 40px;
@@ -519,10 +555,6 @@ input:hover {
 @media only screen and (min-width: 1600px) {
     h2 {
         font-size: 34px;
-    }
-    p {
-        font-size: 24px;
-        text-align: left;
     }
     .kdojsem > h2 {
         position: relative;

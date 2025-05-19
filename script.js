@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+  //paralax effekt
   var vojta = document.getElementsByClassName('vojta');
   new SimpleParallax(vojta, {
     scale: 1.5,
@@ -21,6 +22,7 @@ window.addEventListener('load', function () {
     overflow: true
   });
 });
+// side bar
 var zapnuty = false;
 function menu() {
     var menubutton = document.getElementById("menubutton");
@@ -40,7 +42,10 @@ function menu() {
     
     
 }
+
+//Email send pres emailjs
 document.getElementById("kontakt-formular").addEventListener("submit", function(e) {
+  //nepreskocitelny alert vyskočí aby se nedali emaily spamovat a mezitim se vrati jestli to bylo odesláno uspěšně
     swal("Čekejte!", {
         buttons: false,
         icon: "info",
