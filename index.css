@@ -26,7 +26,17 @@ p {
     word-wrap: break-word;
     white-space: normal;  
 }
-.text-container {
+.text-container-1 {
+    width: 100%;
+}
+.text-container-2 {
+    width: 100%;
+}
+.text-container-3 {
+   margin-top: 25px;
+    width: 100%;
+}
+.text-container-4 {
     width: 100%;
 }
 h2 {
@@ -109,10 +119,10 @@ h3 {
     position: relative;
     top: 50px;
     z-index: 1;
-    padding: 0px;
     margin: 0px;
     height: 155px;
     overflow: hidden;
+    padding-top: 20px;
 }
 .hero-holder {
     display: flex;
@@ -200,6 +210,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: calc(15vw);
 }
 .css {
     height: 100px;
@@ -314,13 +325,34 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-.konicky > img {
+.konicky > .konicky-container > img , .konicky > .konicky-container-2 > img {
     width: 150px;
+    height: auto;
+    object-fit: contain;
     align-items: center;
 }
 .boombox {
     transform: translateY(-15px) rotateZ(15deg);
-    
+}
+.Programing {
+    transform: rotateZ(-15deg);
+    position: relative;
+    top: 0px;
+}
+.konicky-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.konicky-container-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
 }
 .kontakt {
     scroll-margin-top: 100px;
@@ -421,9 +453,12 @@ input:hover {
     p {
         font-size: 1rem;
     }
-    .text-container {
+    .text-container-1 {
         width: 255px;
-}
+    }
+    .text-container-4 {
+        width: 300px;
+    }
     .kdojsem > h2 {
         position: relative;
         align-self: start;
@@ -443,7 +478,7 @@ input:hover {
     }
     .kdojsem > .kdojseminside {
         display: flex;
-         width: 100%;
+        width: 100%;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -460,7 +495,6 @@ input:hover {
         position: relative;
         top: 100px;
         z-index: 1;
-        padding: 0px;
         margin: 0px;
     }
     .hero-holder {
@@ -487,8 +521,30 @@ input:hover {
         left: 0px;
         width: 350px;
     }
+    .konicky-container {
+        flex-direction: row;
+        gap: 100px;
+        margin-bottom: 100px;
+    }
+    .konicky-container-2 {
+        flex-direction: row-reverse;
+        gap: 100px;
+    }
+    .konicky > .konicky-container > img , .konicky > .konicky-container-2 > img {
+        width: 150px;
+        height: auto;
+        align-items: center;
+    }
+    .Programing {
+        top: -25px;
+    }
 }
 @media only screen and (min-width: 1200px) {
+    .text-container-4 {
+        width: 300px;
+
+    }
+    
     .kdojsem > h2 {
         position: relative;
         align-self: start;
@@ -514,22 +570,28 @@ input:hover {
         padding-left: 40px;
         padding-right: 220px;
     }
+    .text-container-2 {
+        width: 290px;
+    }
+    .text-container-3 {
+        width: 500px;
+    }
     .container-skillholder {
         flex-direction: row;
     }
     .skillholder {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .portfolio-container {
         display: flex;
         flex-direction: row;
+        gap: 13vw;
     }
     .top > h1 {
         font-size: 125px;
         position: relative;
         top: 250px;
         z-index: 1;
-        padding: 0px;
         margin: 0px;
     }
     .hero-holder {
@@ -555,6 +617,24 @@ input:hover {
         top: -225px;
         left: 0px;
         width: 532px;
+    }
+    .konicky-container {
+        flex-direction: row;
+        gap: 250px;
+        margin-bottom: 250px;
+
+    }
+    .konicky-container-2 {
+        flex-direction: row-reverse;
+        gap: 250px;
+    }
+    .konicky > .konicky-container > img , .konicky > .konicky-container-2 > img {
+        width: 300px;
+        height: auto;
+        align-items: center;
+    }
+    .Programing {
+        top: -150px;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -586,10 +666,24 @@ input:hover {
         flex-direction: row;
     }
     .skillholder {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-    .portfolio-container {
-        display: flex;
+    .konicky-container {
         flex-direction: row;
+        gap: 250px;
+        margin-bottom: 250px;
+
+    }
+    .konicky-container-2 {
+        flex-direction: row-reverse;
+        gap: 250px;
+    }
+    .konicky > .konicky-container > img , .konicky > .konicky-container-2 > img {
+        width: 650px;
+        height: auto;
+        align-items: center;
+    }
+    .Programing {
+        top: -150px;
     }
 }
