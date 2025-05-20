@@ -100,7 +100,7 @@ h3 {
     color: white;
     font-family: "Josefin";
     font-size: 35px;
-    height: 400px;
+    height: 550px;
     overflow: hidden;
     overflow-wrap: break-word;
 }
@@ -111,7 +111,7 @@ h3 {
     z-index: 1;
     padding: 0px;
     margin: 0px;
-    height: 151px;
+    height: 155px;
     overflow: hidden;
 }
 .hero-holder {
@@ -135,9 +135,9 @@ h3 {
 .langarmy > img{
     object-fit: contain ;
     position: relative;
-    width: 180px;
+    width: 250px;
     left: 0px; 
-    top: 120px;
+    top: 60px;
 }
 .site > * {
     padding-top: 36px;
@@ -355,6 +355,7 @@ h3 {
 a > button {
     transition: 0.2s;
     margin-top: 15px;
+    font-family: "Josefin";
 }
 button {
     transition: 0.2s;
@@ -380,6 +381,10 @@ input:hover {
     margin-top: 150px;
     text-align: center;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .topp > img {
     width: 300px;
@@ -428,7 +433,7 @@ input:hover {
         align-self: end;
         position: relative;
         left: -80px;
-        top: -55px;
+        top: -20px;
     }
     .imgs > img {
         width: 240px;
@@ -465,8 +470,8 @@ input:hover {
     }
     .vojta {
         position:  relative;
-        width: 400px;
-        top: 150px;
+        width: 310px;
+        top: 70px;
         z-index: 25;
         left: 0;
     }
@@ -534,8 +539,8 @@ input:hover {
     }
     .vojta {
         position:  relative;
-        width: 400px;
-        top: 150px;
+        width: 365px;
+        top: 3px;
         z-index: 25;
         left: 0;
     }
@@ -547,7 +552,7 @@ input:hover {
     .langarmy > img{
         object-fit: contain ;
         position: relative;
-        top: -25px;
+        top: -225px;
         left: 0px;
         width: 532px;
     }
