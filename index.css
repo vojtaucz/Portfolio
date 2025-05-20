@@ -73,12 +73,9 @@ h3 {
     gap: 60px;
     z-index: 255;
 }
-.menuvojta {
-    margin-right: calc(1vw + 5px);
-}
 .navvojta {
-    width: 100px;
-    margin-top: 7px;
+    width: 89px;
+    margin: 0%;
     background-color: #e0e0e0;
     border-radius: 100%;
 }
@@ -337,7 +334,7 @@ h3 {
 .Programing {
     transform: rotateZ(-15deg);
     position: relative;
-    top: 0px;
+    top: -25px;
 }
 .konicky-container {
     display: flex;
@@ -461,8 +458,8 @@ input:hover {
     }
     .kdojsem > h2 {
         position: relative;
-        align-self: start;
-        right: -50px;
+        align-self: center;
+        top: -50px;
     }
     .kdojsem > .kdojseminside > .imgs {
         align-self: end;
@@ -480,7 +477,7 @@ input:hover {
         display: flex;
         width: 100%;
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .kdojsem > .kdojseminside > p {
         padding-left: 40px;
@@ -543,12 +540,6 @@ input:hover {
     .text-container-4 {
         width: 300px;
 
-    }
-    
-    .kdojsem > h2 {
-        position: relative;
-        align-self: start;
-        right: -50px;
     }
     .kdojsem > .kdojseminside > .imgs {
         align-self: end;
@@ -642,9 +633,6 @@ input:hover {
         font-size: 34px;
     }
     .kdojsem > h2 {
-        position: relative;
-        align-self: start;
-        right: -50px;
         font-size: 34px;
     }
     .kdojsem > .kdojseminside > img {
