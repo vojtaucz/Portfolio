@@ -4,6 +4,9 @@
     src: url(JosefinSans-VariableFont_wght.ttf);
     font-style: normal;
 }
+.swal2-popup {
+  font-family: Josefin;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -72,6 +75,13 @@ h3 {
     align-items: center;
     gap: 60px;
     z-index: 255;
+}
+.sidemenu > a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+.sidemenu > a:hover {
+    text-decoration: underline;
 }
 .navvojta {
     width: 89px;
@@ -188,7 +198,7 @@ h3 {
 }
 .skillloader {
     background-color: #0E2630;
-    height: 50px;
+    height: 25px;
     width: 275px;
     border-radius: 30px;
     z-index: 50;
@@ -221,7 +231,7 @@ h3 {
 }
 .skillloaded1 {
     background-color: #F2545B;
-    height: 50px;
+    height: 25px;
     width: 75%;
     border-radius: 30px;
     z-index: 100;
@@ -258,7 +268,7 @@ h3 {
 }
 .skillloaded2 {
     background-color: #F2545B;
-    height: 50px;
+    height: 25px;
     width: 33%;
     border-radius: 30px;
     z-index: 100;
@@ -277,7 +287,7 @@ h3 {
 }
 .skillloaded3 {
     background-color: #F2545B;
-    height: 50px;
+    height: 25px;
     width: 57%;
     border-radius: 30px;
     z-index: 100;
@@ -330,6 +340,8 @@ h3 {
 }
 .boombox {
     transform: translateY(-15px) rotateZ(15deg);
+    position: relative;
+    top: 50px;
 }
 .Programing {
     transform: rotateZ(-15deg);
@@ -459,7 +471,6 @@ input:hover {
     .kdojsem > h2 {
         position: relative;
         align-self: center;
-        top: -50px;
     }
     .kdojsem > .kdojseminside > .imgs {
         align-self: end;
