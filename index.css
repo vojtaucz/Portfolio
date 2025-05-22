@@ -1,14 +1,47 @@
+:root {
+    --size: 250px;
+}
+/* Font import
+*/
 @font-face {
     font-family: "Josefin";
     font-weight: 400;
     src: url(JosefinSans-VariableFont_wght.ttf);
     font-style: normal;
 }
-.swal2-popup {
-  font-family: Josefin;
+/* sweet alert classy 
+*/
+.swal-text {
+    font-family: "Josefin";
+    margin-top: 25px;
+    font-size: 20px;
+    color: #F2545B;
+}
+.swal-modal {
+    background-color: #19323C;
+}
+.swal-icon--success__line {
+    background-color: #F2545B;
+    z-index: 250;
+}
+.swal-icon--success__hide-corners {
+    background-color: #00000000;
+}
+.swal-icon--success::after , .swal-icon--success::before {
+    background-color: #00000000;
+}
+.swal-icon--success__ring {
+    border: 4px solid hsl(357.3, 85.9%, 63.9%); 
+}
+.swal-icon--info {
+    border-color: #F2545B;
+}
+.swal-icon--info::after , .swal-icon--info::before{
+    background-color: #F2545B;
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body { 
     margin: 0;
@@ -341,7 +374,7 @@ h3 {
 .boombox {
     transform: translateY(-15px) rotateZ(15deg);
     position: relative;
-    top: 50px;
+    top: -25px;
 }
 .Programing {
     transform: rotateZ(-15deg);
@@ -357,6 +390,7 @@ h3 {
     align-items: center;
 }
 .konicky-container-2 {
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -424,14 +458,53 @@ input:hover {
     padding-bottom: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    height: auto
 }
 .topp > img {
     width: 300px;
     align-items: center;
 }
 .topp > a > button {
+    border-radius: 60px;
+    border-color: #ffffff00;
+    width: 125px;
+    border-radius: 15px;
+    overflow: visible;
+}
+.portfolio-container-ps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.portfoliotab1 , .portfoliotab2 ,.portfoliotab3 {
+    background-color:#d75056;
+    border-radius: 0.5vw;
+    height: 375px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.portfoliotab1:hover , .portfoliotab1:active {
+    height: calc(var(--size) + 500px - 375px);
+}
+.portfoliotab2:hover , .portfolitab2:active {
+    height: calc(var(--size) + 500px - 375px);
+}
+.portfoliotab3:hover , .portfoliotab3:active {
+    height: calc(var(--size) + 500px - 375px);
+}
+.portfoliotab1 > img , .portfoliotab2 > img , .portfoliotab3 > img {
+    width: var(--size);
+    object-fit: cover;
+}
+div > a > button {
     border-radius: 60px;
     border-color: #ffffff00;
     width: 125px;
@@ -459,6 +532,12 @@ input:hover {
     }
 }
 @media only screen and (min-width: 750px) {
+    .portfolio-container-ps {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 1vw;
+    }
     p {
         font-size: 1rem;
     }
@@ -493,10 +572,6 @@ input:hover {
     .kdojsem > .kdojseminside > p {
         padding-left: 40px;
         padding-right: 100px;
-    }
-    .portfolio-container {
-        display: flex;
-        flex-direction: row;
     }
     .top > h1 {
         font-size: 125px;
@@ -535,6 +610,7 @@ input:hover {
         margin-bottom: 100px;
     }
     .konicky-container-2 {
+        margin-top: 0px;
         flex-direction: row-reverse;
         gap: 100px;
     }
@@ -545,6 +621,21 @@ input:hover {
     }
     .Programing {
         top: -25px;
+    }
+    .boombox { 
+        top: 50px;
+    }
+    :root {
+        --size: 250px
+    }
+    .topp {
+        height: calc(var(--size) + 250px);
+    }
+}
+@media only screen and (min-width: 886px) {
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -638,6 +729,9 @@ input:hover {
     .Programing {
         top: -150px;
     }
+    :root {
+        --size: 380px
+    }
 }
 @media only screen and (min-width: 1600px) {
     h2 {
@@ -684,5 +778,8 @@ input:hover {
     }
     .Programing {
         top: -150px;
+    }
+    :root {
+        --size: 490px
     }
 }

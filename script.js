@@ -50,6 +50,9 @@ document.getElementById("kontakt-formular").addEventListener("submit", function(
         buttons: false,
         icon: "info",
         timer: 3000,
+        customClass: {
+          popup: "swal"
+        }
       });
     e.preventDefault();
     emailjs.sendForm('service_bjk8cql', 'template_uioe2qa', this)
@@ -68,3 +71,9 @@ document.getElementById("kontakt-formular").addEventListener("submit", function(
         }
       );
   });
+function debug() {
+  swal({
+    text: "%DEBUG%",
+    icon: "info"
+  });
+}
