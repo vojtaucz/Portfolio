@@ -365,7 +365,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-.konicky > .konicky-container > img , .konicky > .konicky-container-2 > img {
+.konicky > .konicky-container-2 > img {
     width: 150px;
     height: auto;
     object-fit: contain;
@@ -375,6 +375,7 @@ h3 {
     transform: translateY(-15px) rotateZ(15deg);
     position: relative;
     top: -25px;
+    width: 210px;
 }
 .Programing {
     transform: rotateZ(-15deg);
@@ -614,7 +615,7 @@ div > a > button {
         flex-direction: row-reverse;
         gap: 100px;
     }
-    .konicky > .konicky-container > img , .konicky > .konicky-container-2 > img {
+    .konicky > .konicky-container-2 > img {
         width: 150px;
         height: auto;
         align-items: center;
@@ -721,10 +722,13 @@ div > a > button {
         flex-direction: row-reverse;
         gap: 250px;
     }
-    .konicky > .konicky-container > img , .konicky > .konicky-container-2 > img {
+    .konicky > .konicky-container-2 > img {
         width: 300px;
         height: auto;
         align-items: center;
+    }
+    .boombox {
+        width: 380px;
     }
     .Programing {
         top: -150px;

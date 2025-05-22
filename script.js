@@ -71,9 +71,3 @@ document.getElementById("kontakt-formular").addEventListener("submit", function(
         }
       );
   });
-function debug() {
-  swal({
-    text: "%DEBUG%",
-    icon: "info"
-  });
-}
